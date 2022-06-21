@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shameShamePJ | Memory Game </title>
+  </head>
+  <body class="w-full h-full bg-no-repeat text-white" style="background-image: url(/src/img/pj.jpg);">
+    <div class="bg-indigo-900 h-14 text-white flex justify-center my-8 items-center text-xl">
+    <h1 >Shame Shame Pearl Jam!</h1>
+  </div>
+  <div class="flex justify-center items-center h-screen gap-x-3">
+
+    
+
+    <form id="taskForm" class="bg-zinc-700 p-10 rounded-md max-w-md">
+        <label for="myfile" class="block">Subir portada:</label>
+        <input type="file" id="myfile" name="myfile" class="bg-gray-800 px-1 py-2 w-full rounded-md mb-2">
+
+        <label for="title" class="block">Your Name</label>
+        <input type="text" id="title" name="title" placeholder="Write your name" class="bg-gray-800 px-1 py-2 w-full rounded-md mb-2" />
+
+        <label for="title" class="block">Album Title</label>
+        <input type="text" id="albumTitle" name="albumTitle" placeholder="Album Name" class="bg-gray-800 px-1 py-2 w-full rounded-md mb-2" />
+
+        <label for="description" class="block">Songs by album:</label>
+        <textarea 
+        id="description" 
+        rows="3" 
+        name="description" 
+        placeholder="Write a Description"
+        class="bg-gray-800 px-1 py-2 w-full rounded-md mb-2"
+        ></textarea>
+
+      <button class="bg-lime-300 px-3 py-1 rounded-md mb-2 text-gray-900 hover:bg-slate-700">
+        Save
+      </button>
+    </form>
+    <div id="tasksList" class="bg-slate-700 max-w-md w-full h-3/5 p-10 rounded-md overflow-y-scroll text-gray-300">
+      
+    </div>
+
+  </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
